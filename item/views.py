@@ -36,10 +36,6 @@ def detail(request, pk):
         item.color = item.color.replace(']', '')
         item.color = item.color.replace("'", '')
 
-
-
-
-    
     return render(request, 'item/detail.html',{
         'item':item,
         'related_items':related_items,
